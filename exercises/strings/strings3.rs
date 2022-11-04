@@ -14,7 +14,7 @@ fn compose_me(input: &str) -> String {
 
 fn replace_me(input: &str) -> String {
     // TODO: Replace "cars" in the string with "balloons"!
-    input.replace("car", "balloons")
+    input.replace("cars", "balloons")
 }
 
 #[cfg(test)]

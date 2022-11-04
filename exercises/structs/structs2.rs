@@ -4,6 +4,7 @@
 
 
 #[derive(Debug)]
+#[derive(Clone)]
 struct Order {
     name: String,
     year: u32,
@@ -37,7 +38,7 @@ mod tests {
         // let your_order =
         let your_order = Order {
             name: String::from("Hacker in Rust"),
-            order: 1,
+            count: 1,
             ..order_template.clone()
         };
         assert_eq!(your_order.name, "Hacker in Rust");
