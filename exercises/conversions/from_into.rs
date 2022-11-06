@@ -39,7 +39,7 @@ impl Default for Person {
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
         let v: Vec<String> = s.split(',').map(|s| s.to_string()).collect();
-        if v.len() == 0 {
+        if v.len() != 2 {
             return Person::default();
         }
         if let Ok(x) = v[1].parse::<usize>() {
